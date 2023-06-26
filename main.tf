@@ -1,4 +1,4 @@
- provider "azurerm" {
+provider "azurerm" {
    skip_provider_registration = true
   features {}
 }
@@ -11,9 +11,10 @@ resource "azurerm_resource_group" "rg" {
 
 # Create a storage account
 resource "azurerm_storage_account" "st" {
-  name                     = "udaystorageaccount35"
+  name                     = "udaystorageaccount357"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
+ 
