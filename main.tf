@@ -14,8 +14,10 @@ resource "azurerm_storage_account" "example" {
   resource_group_name       = azurerm_resource_group.example.name
   location                  = var.location
   account_tier              = "Standard"
-  account_replication_type  = "GRS"
+ 
+  account_replication_type  = "LRS"
 }
+ 
 
 resource "azurerm_servicebus_namespace" "example" {
   name                      = local.servicebus_namespace_name
@@ -23,3 +25,4 @@ resource "azurerm_servicebus_namespace" "example" {
   resource_group_name       = azurerm_resource_group.example.name
   sku                       = "Standard"
 }
+ 
