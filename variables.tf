@@ -32,12 +32,16 @@ variable "env" {
 
 variable "main_project" {
     type  = string
+ 
     default = "youtube"
+ 
 }
 
 variable "sub_project" {
     type  = string
-    default = "369"
+ 
+    default = "357"
+ 
 }
 
 variable "location" {
